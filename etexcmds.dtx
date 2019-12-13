@@ -1,13 +1,13 @@
 % \iffalse meta-comment
 %
 % File: etexcmds.dtx
-% Version: 2016/05/16 v1.6
+% Version: 2019/12/15 v1.7
 % Info: Avoid name clashes with e-TeX commands
 %
 % Copyright (C)
 %    2007, 2010, 2011 Heiko Oberdiek
 %    2016-2019 Oberdiek Package Support Group
-%    https://github.com/ho-tex/oberdiek/issues
+%    https://github.com/ho-tex/etexcmds/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -23,7 +23,7 @@
 %
 % The Current Maintainers of this work are
 % Heiko Oberdiek and the Oberdiek Package Support Group
-% https://github.com/ho-tex/oberdiek/issues
+% https://github.com/ho-tex/etexcmds/issues
 %
 % The Base Interpreter refers to any `TeX-Format',
 % because some files are installed in TDS:tex/generic//.
@@ -35,8 +35,8 @@
 %    etexcmds-test4.tex.
 %
 % Distribution:
-%    CTAN:macros/latex/contrib/oberdiek/etexcmds.dtx
-%    CTAN:macros/latex/contrib/oberdiek/etexcmds.pdf
+%    CTAN:macros/latex/contrib/etexcmds/etexcmds.dtx
+%    CTAN:macros/latex/contrib/etexcmds/etexcmds.pdf
 %
 % Unpacking:
 %    (a) If etexcmds.ins is present:
@@ -65,9 +65,9 @@
 %       pdflatex etexcmds.dtx
 %
 % Installation:
-%    TDS:tex/generic/oberdiek/etexcmds.sty
-%    TDS:doc/latex/oberdiek/etexcmds.pdf
-%    TDS:source/latex/oberdiek/etexcmds.dtx
+%    TDS:tex/generic/etexcmds/etexcmds.sty
+%    TDS:doc/latex/etexcmds/etexcmds.pdf
+%    TDS:source/latex/etexcmds/etexcmds.dtx
 %
 %<*ignore>
 \begingroup
@@ -84,7 +84,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)}
+\Msg{* Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -96,7 +96,7 @@
 This is a generated file.
 
 Project: etexcmds
-Version: 2016/05/16 v1.6
+Version: 2019/12/15 v1.7
 
 Copyright (C)
    2007, 2010, 2011 Heiko Oberdiek
@@ -116,7 +116,7 @@ This work has the LPPL maintenance status "maintained".
 
 The Current Maintainers of this work are
 Heiko Oberdiek and the Oberdiek Package Support Group
-https://github.com/ho-tex/oberdiek/issues
+https://github.com/ho-tex/etexcmds/issues
 
 
 The Base Interpreter refers to any `TeX-Format',
@@ -134,13 +134,8 @@ and the derived files
 \generate{%
   \file{etexcmds.ins}{\from{etexcmds.dtx}{install}}%
   \file{etexcmds.drv}{\from{etexcmds.dtx}{driver}}%
-  \usedir{tex/generic/oberdiek}%
+  \usedir{tex/generic/etexcmds}%
   \file{etexcmds.sty}{\from{etexcmds.dtx}{package}}%
-%  \usedir{doc/latex/oberdiek/test}%
-%  \file{etexcmds-test1.tex}{\from{etexcmds.dtx}{test1}}%
-%  \file{etexcmds-test2.tex}{\from{etexcmds.dtx}{test2}}%
-%  \file{etexcmds-test3.tex}{\from{etexcmds.dtx}{test3}}%
-%  \file{etexcmds-test4.tex}{\from{etexcmds.dtx}{test4}}%
 }
 
 \catcode32=13\relax% active space
@@ -167,7 +162,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{etexcmds.drv}%
-  [2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)]%
+  [2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -181,9 +176,9 @@ and the derived files
 % \GetFileInfo{etexcmds.drv}
 %
 % \title{The \xpackage{etexcmds} package}
-% \date{2016/05/16 v1.6}
+% \date{2019/12/15 v1.7}
 % \author{Heiko Oberdiek\thanks
-% {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
+% {Please report any issues at \url{https://github.com/ho-tex/etexcmds/issues}}}
 %
 % \maketitle
 %
@@ -307,7 +302,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@etexcmds.sty\endcsname
 \ProvidesPackage{etexcmds}%
-  [2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)]%
+  [2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -539,17 +534,17 @@ and the derived files
 % \paragraph{Package.} This package is available on
 % CTAN\footnote{\CTANpkg{etexcmds}}:
 % \begin{description}
-% \item[\CTAN{macros/latex/contrib/oberdiek/etexcmds.dtx}] The source file.
-% \item[\CTAN{macros/latex/contrib/oberdiek/etexcmds.pdf}] Documentation.
+% \item[\CTAN{macros/latex/contrib/etexcmds/etexcmds.dtx}] The source file.
+% \item[\CTAN{macros/latex/contrib/etexcmds/etexcmds.pdf}] Documentation.
 % \end{description}
 %
 %
-% \paragraph{Bundle.} All the packages of the bundle `oberdiek'
+% \paragraph{Bundle.} All the packages of the bundle `etexcmds'
 % are also available in a TDS compliant ZIP archive. There
 % the packages are already unpacked and the documentation files
 % are generated. The files and directories obey the TDS standard.
 % \begin{description}
-% \item[\CTANinstall{install/macros/latex/contrib/oberdiek.tds.zip}]
+% \item[\CTANinstall{install/macros/latex/contrib/etexcmds.tds.zip}]
 % \end{description}
 % \emph{TDS} refers to the standard ``A Directory Structure
 % for \TeX\ Files'' (\CTANpkg{tds}). Directories
@@ -557,11 +552,11 @@ and the derived files
 %
 % \subsection{Bundle installation}
 %
-% \paragraph{Unpacking.} Unpack the \xfile{oberdiek.tds.zip} in the
+% \paragraph{Unpacking.} Unpack the \xfile{etexcmds.tds.zip} in the
 % TDS tree (also known as \xfile{texmf} tree) of your choice.
 % Example (linux):
 % \begin{quote}
-%   |unzip oberdiek.tds.zip -d ~/texmf|
+%   |unzip etexcmds.tds.zip -d ~/texmf|
 % \end{quote}
 %
 % \subsection{Package installation}
@@ -579,9 +574,9 @@ and the derived files
 % \begin{quote}
 % \def\t{^^A
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
-%   etexcmds.sty & tex/generic/oberdiek/etexcmds.sty\\
-%   etexcmds.pdf & doc/latex/oberdiek/etexcmds.pdf\\
-%   etexcmds.dtx & source/latex/oberdiek/etexcmds.dtx\\
+%   etexcmds.sty & tex/generic/etexcmds/etexcmds.sty\\
+%   etexcmds.pdf & doc/latex/etexcmds/etexcmds.pdf\\
+%   etexcmds.dtx & source/latex/etexcmds/etexcmds.dtx\\
 % \end{tabular}^^A
 % }^^A
 % \sbox0{\t}^^A
@@ -719,6 +714,10 @@ and the derived files
 %     Using \hologo{LuaTeX}'s \texttt{tex.enableprimitives} if available.
 %   \end{Version}
 %   \begin{Version}{2016/05/16 v1.6}
+%   \item
+%     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2019/12/15 v1.7}
 %   \item
 %     Documentation updates.
 %   \end{Version}
